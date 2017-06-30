@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bird : MonoBehaviour {
 
-    public float timer;
+    public float timer = 0;
     public int frameNumber = 10;    //frame number one seconds
     public int frameCount = 0;      //frame counter
 	// Use this for initialization
@@ -15,7 +15,7 @@ public class Bird : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         timer += Time.deltaTime;
-        if (timer >= 1.0f / frameNumber)
+        if (timer >= 1.0f / frameNumber)    //每过10分之一秒
         {
             frameCount++;
             timer -= 1.0f / frameNumber;
