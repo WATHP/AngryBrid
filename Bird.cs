@@ -22,7 +22,7 @@ public class Bird : MonoBehaviour {
             int frameIndex = frameCount % 3;
             //update material's offset
             //how to set the property of (x offset) 
-            //MainTex:着色器中主要的漫反射
+            //MainTex:着色器中主要的漫反射纹理
             GetComponent<Renderer>().material.SetTextureOffset("_MainTex", new Vector2(0.3333f*frameIndex, 0));
         }
 	}
