@@ -9,7 +9,7 @@ public class Bird : MonoBehaviour {
     public int frameCount = 0;      //frame counter
 	// Use this for initialization
 	void Start () {
-		
+        GetComponent<Rigidbody>().velocity = new Vector3(5, 0, 0);
 	}
 	
 	// Update is called once per frame
